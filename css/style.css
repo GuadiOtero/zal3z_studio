@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;  
+}
+
+header{
+    background-color: #1E1E1E;
+
+}
+
+
+ 
+h1{
+    color: #AD5E00;
+    text-align: left;
+    font-family: lexend zetta;
+    font-size: 40px;
+
+}
+nav{
+    background-color: #1E1E1E;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type:none;
+    padding: 10px 0px 10px 0px;
+}
+
+a{
+    color:#AD5E00;
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1E1E1E;
+    
+}
+
+main{
+    background-color: #1E1E1E;
+    height: 775px;
+    position: relative;
+}
+
+#logoprincipal{
+    width: 50%;
+    height: 30%;
+    object-fit: contain;
+
+ 
+}
+
+#menuprincipal{
+    background-image: url(../img/fondo.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: #AD5E00;
+    font-size: 50px;
+    font-family: roboto;
+    text-align: center;
+}
+footer{
+    background-color: #1E1E1E;    
+}
+
+p{
+    color:#AD5E00;
+    font-family: roboto;
+    font-size: 20px;
+}
+
+
+footer p{
+    text-align: center;
+}
+
+/*PRODUCCIONES*/
+
+#main_producciones{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/mezcla.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+h3{
+    color: #AD5E00;
+    font-size: 20px;
+    font-family: roboto;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+
+
+}
+
+#titulo_canciones{
+    color: #AD5E00;
+    font-size: 20px;
+    font-family: roboto;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+}
+
+
+
+#producciones_contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    height: 700px;
+    width: 1500px;
+
+    border-radius: 20px;
+    
+}
+
+#videos_realizados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+/*SERVICIOS*/
+
+#servicios{
+    background-image: url(../img/micro.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+h4{
+    color: #AD5E00;
+    font-size: 15px;
+    font-family: roboto;
+    text-align: center;
+    padding: 0px 5px 20px 5px;
+}
+
+.cards_contenedor{
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1E1E1E;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.cards_img{
+    height: 50%;
+    width: 80%;
+    object-fit: contain;
+}
+
+/*SOBRE MI*/
+#sobremi{
+    display: flex;
+    justify-content: center;
+    padding: 100px 100px 100px 100px;
+
+
+}
+
+#sobremi_hijo{
+    padding: 20px 20px 20px 20px;
+ 
+     
+
+}
+
+#sobremi_hijouno{
+    width: 700px;
+ 
+}
+
+/*CONTACTO*/
+#main_contacto{
+    background-image: url(../img/fondo.png);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#page_contacto{
+    background-color: #1E1E1E;
+    width: 1150px;
+    height: 700px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+
+    
+ 
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column; 
+    border-right: 2px solid #AD5E00;
+     padding-right: 50px;
+
+  
+    
+
+}
+
+#datosdecontacto{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: roboto;
+    background-color: #1E1E1E;
+     justify-content: center;
+     padding-left: 50px;
+ 
+ 
+}
+
+.checkboxes{
+     display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 150px;
+    grid-template-areas: "a1 a1"
+                        "a2 a3 "
+                        "a4 a5 "
+                        "a6 a7";
+
+}
+
+#checkbox_titulo{
+    grid-area: a1;
+    
+}
+#checkbox_beats{
+    grid-area: a2;
+    margin-right: 10px;
+}
+#checkbox_grabacion{
+    grid-area: a3;
+    margin-right: 10px;
+}
+#checkbox_produccion{
+    grid-area: a4;
+    margin-right: 10px;
+}
+#checkbox_mezcla{
+    grid-area: a5;
+    margin-right: 10px;
+}
+#checkbox_videos{
+    grid-area: a6;
+    margin-right: 10px;
+}
+#checkbox_clases{
+    grid-area: a7;
+    margin-right: 10px;
+}
+
+label{
+    color: #AD5E00;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+    padding: 20px 0px 2px 0px;
+}
+
+legend{
+    color:#AD5E00;
+    font-size: 20px;
+    font-family: roboto;
+}
+input{
+    height: 40px;
+}
+
+#boton{
+    height: 36px;
+    width: 80px;
+    background-color: #AD5E00;
+    color:#1E1E1E;
+    font-weight: bold;
+    font-family: roboto;
+    border-color: #AD5E00;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.checkbox_text{
+    display: flex;
+     align-items: center;
+    font-size: 15px;
+
+}
+ 
+textarea{
+    width: 400px;
+    height: 100px;
+    max-width: 400px;
+    max-height: 100px;
+}
+
+
+/* S */
+@media only screen and ( max-width:600px){
+
+    /*INICIO*/
+    h1{
+        font-size: 20px;
+    }
+
+    ul{
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    a{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #logoprincipal{
+        width: 400px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    /*PRODUCCIONES*/
+
+    #producciones_contenido{
+        display: flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        height: 1050px;
+        width: 328px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 20px;
+        
+    }
+
+    #videos_realizados{
+        flex-direction: column;
+
+    }
+
+    .videos_prod{
+        width: 325px;
+        height: 184px;
+        margin-top: 20px;
+
+    }
+
+    #main_producciones{
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/mezcla.jpg);
+        height: 1150px;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+
+}
+
+/* M */
+@media only screen and ( max-width:768px){
+}
