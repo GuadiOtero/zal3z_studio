@@ -36,7 +36,7 @@ h1{
     margin-left:50%;
 }
 
-body {
+body{
     background-color: #1E1E1E;
     
 }
@@ -187,15 +187,10 @@ h4{
     display: flex;
     justify-content: center;
     padding: 100px 100px 100px 100px;
-
-
 }
 
 #sobremi_hijo{
-    padding: 20px 20px 20px 20px;
- 
-     
-
+    padding: 20px 20px 20px 20px; 
 }
 
 #sobremi_hijouno{
@@ -210,7 +205,6 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 #page_contacto{
@@ -218,14 +212,9 @@ h4{
     width: 1150px;
     height: 700px;
     display: flex;
-    flex: row;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    
-
-    
- 
 }
 
 #formulario{
@@ -233,10 +222,6 @@ h4{
     flex-direction: column; 
     border-right: 2px solid #AD5E00;
      padding-right: 50px;
-
-  
-    
-
 }
 
 #datosdecontacto{
@@ -247,8 +232,6 @@ h4{
     background-color: #1E1E1E;
      justify-content: center;
      padding-left: 50px;
- 
- 
 }
 
 .checkboxes{
@@ -325,7 +308,6 @@ input{
     display: flex;
      align-items: center;
     font-size: 15px;
-
 }
  
 textarea{
@@ -335,6 +317,16 @@ textarea{
     max-height: 100px;
 }
 
+a{
+    color: #AD5E00;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+a:hover{
+     color: aliceblue;
+}
 
 /* L */
 @media only screen and ( max-width:992px){
@@ -398,12 +390,8 @@ textarea{
     
         grid-template-areas:"a1 a2"
                            "a3 a4" 
-                           "a5 a6";
-   
-         
-                           
-        
-    
+                           "a5 a6";        
+            
     }
 
     .cards{
@@ -435,7 +423,7 @@ textarea{
     }
 
     p{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #logoprincipal{
@@ -453,20 +441,17 @@ textarea{
         height: 1050px;
         width: 350px;
         padding: 20px 20px 20px 20px;
-        border-radius: 20px;
-        
+        border-radius: 20px;  
     }
 
     #videos_realizados{
         flex-direction: column;
-
     }
 
     .videos_prod{
         width: 310px;
         height: 176px;
         margin-top: 20px;
-
     }
 
     #main_producciones{
@@ -479,7 +464,100 @@ textarea{
         align-items: center;
             
     }
+   /*SERVICIOS*/
 
+   #servicios{
+    height: 720px;
+}
+    .cards_contenedor{
+    
+        grid-template-areas:"a1 a2"
+                           "a3 a4" 
+                           "a5 a6";
+        grid-template-rows: 230px 230px 230px;        
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #1E1E1E;
+        width: 160px;
+        height: 186px;
+        border-radius: 20px;
+    }
+
+    /*SOBRE MI*/
+
+    #sobremi_main{
+        height: 980px;
+    }
+    #sobremi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 16px 16px 16px;
+    }
+
+    #sobremi_hijo{
+        padding: 0px 0px 0px 0px;
+        justify-content: center;   
+    }
+
+    #sobremi_img{
+        width: 328px;
+        height: auto;
+    }
+
+    #sobremi_hijouno{
+        width: 328px;
+    }
+
+
+    /*CONTACTO*/
+    #main_contacto{
+        height: 980px;
+    
+    }
+
+    #page_contacto{
+        width: 360px;
+        height: 900px; 
+        flex-direction: column;
+    
+    }
+
+    #formulario{
+
+        border-right: 0px;
+        padding-right: 0px;
+        border-bottom: 2px solid #AD5E00;
+        padding-bottom: 25px;
+        width: 328px;  
+    }
+
+    #datosdecontacto{
+        padding-left: 0px;
+        padding-top: 25px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    textarea{
+        width: 328px;
+        max-width: 328px;
+    }
+
+    a{
+        font-size: 18px;
+    }
+    #datosdecontacto_texto{
+        margin:0px;
+    }
 
 }
 
