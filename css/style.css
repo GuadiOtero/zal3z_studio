@@ -3,409 +3,312 @@
   padding: 0;
 }
 
-@media only screen and (min-width: 1200px) {
+/*INICIO*/
+nav h1 {
+  color: #ad5f00;
+  text-align: left;
+  font-family: lexend zetta;
+}
+nav .navbar-toggler-icon {
+  background-image: url(../img/account-circle.png);
+}
+nav .navbar-toggler {
+  color: #ad5f00;
+}
+nav .nav-link:hover {
+  color: azure;
+}
+nav .nav-link {
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: bold;
+  color: #ad5f00;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+}
+
+main {
+  background-color: rgb(30, 30, 30);
+}
+
+#menuprincipal {
+  background-image: url(../img/fondo.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: rgb(30, 30, 30);
+}
+footer p {
+  text-align: center;
+  color: #ad5f00;
+}
+
+/*PRODUCCIONES*/
+.titulo_canciones, #sobremi h3, #main_producciones h3 {
+  color: #ad5f00;
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 5px 20px 5px;
+}
+
+#main_producciones {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/mezcla.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+#main_producciones #producciones_contenido {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(30, 30, 30);
+  border-radius: 20px;
+}
+#main_producciones h3 {
+  padding: 20px 0px 0px 0px;
+}
+
+/*SERVICIOS*/
+#servicios {
+  background-image: url(../img/micro.jpg);
+  background-size: cover;
+  position: relative;
+}
+#servicios .cards_contenedor {
+  display: grid;
+  align-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+#servicios h4 {
+  font-size: 15px;
+  font-family: roboto;
+  font-weight: 0;
+  color: #ad5f00;
+  text-align: center;
+  padding: 0px 5px 20px 5px;
+}
+#servicios .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(30, 30, 30);
+  border-radius: 20px;
+}
+#servicios .cards_img {
+  height: 50%;
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#servicios .cards:hover {
+  border: 2px solid #ad5f00;
+}
+
+/*SOBRE MI*/
+#sobremi {
+  display: flex;
+}
+#sobremi h3 {
+  text-align: left;
+}
+#sobremi p {
+  font-size: 15px;
+  font-family: roboto;
+  font-weight: 0;
+  color: #ad5f00;
+}
+
+/*CONTACTO*/
+#main_contacto {
+  background-image: url(../img/mezcla.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main_contacto #page_contacto {
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+#main_contacto #formulario {
+  display: flex;
+  flex-direction: column;
+}
+#main_contacto #datosdecontacto {
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(30, 30, 30);
+  justify-content: center;
+  padding-left: 50px;
+}
+#main_contacto .checkboxes {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 150px;
+  grid-template-areas: "a1 a1" "a2 a3 " "a4 a5 " "a6 a7";
+}
+#main_contacto #checkbox_titulo {
+  grid-area: a1;
+}
+#main_contacto #checkbox_beats {
+  grid-area: a2;
+  margin-right: 10px;
+}
+#main_contacto #checkbox_grabacion {
+  grid-area: a3;
+  margin-right: 10px;
+}
+#main_contacto #checkbox_produccion {
+  grid-area: a4;
+  margin-right: 10px;
+}
+#main_contacto #checkbox_mezcla {
+  grid-area: a5;
+  margin-right: 10px;
+}
+#main_contacto #checkbox_videos {
+  grid-area: a6;
+  margin-right: 10px;
+}
+#main_contacto #checkbox_clases {
+  grid-area: a7;
+  margin-right: 10px;
+}
+#main_contacto label {
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: bold;
+  color: #ad5f00;
+  padding: 20px 0px 2px 0px;
+}
+#main_contacto legend {
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 0;
+  color: #ad5f00;
+}
+#main_contacto input {
+  height: 40px;
+}
+#main_contacto #boton {
+  font-size: 15px;
+  font-family: roboto;
+  font-weight: bold;
+  height: 36px;
+  width: 80px;
+  background-color: #ad5f00;
+  color: rgb(30, 30, 30);
+  border-color: #ad5f00;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+#main_contacto #boton:hover {
+  background-color: #b67e39;
+  border-color: #b67e39;
+}
+#main_contacto .checkbox_text {
+  font-size: 15px;
+  font-family: roboto;
+  font-weight: 0;
+  display: flex;
+  align-items: center;
+  color: #ad5f00;
+}
+#main_contacto a {
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: bold;
+  color: #ad5f00;
+}
+#main_contacto a:hover {
+  color: aliceblue;
+}
+#main_contacto p {
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: 0;
+  color: #ad5f00;
+  margin: 0px;
+}
+
+/* MOBILE */
+@media only screen and (min-width: 320px) {
   /*INICIO*/
-  h1 {
-    color: rgb(173, 95, 0);
-    text-align: left;
-    font-family: lexend zetta;
-    font-size: 40px;
-  }
-  .navbar-toggler-icon {
-    background-image: url(../img/account-circle.png);
-  }
-  .navbar-toggler {
-    color: rgb(173, 95, 0);
-  }
-  .nav-link:hover {
-    color: azure;
-  }
-  .nav-link {
-    color: rgb(173, 95, 0);
+  nav h1 {
     font-size: 20px;
-    font-family: roboto;
-    font-weight: bold;
-    text-decoration: none;
   }
   .me-auto {
-    margin-left: 50%;
-  }
-  body {
-    background-color: rgb(30, 30, 30);
+    margin-left: 0%;
   }
   main {
-    background-color: rgb(30, 30, 30);
-    height: 775px;
-    position: relative;
+    height: 800px;
   }
   #logoprincipal {
-    width: 50%;
-    height: 30%;
+    width: 400px;
+    height: 300px;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  #menuprincipal {
-    background-image: url(../img/fondo.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  h2 {
-    color: rgb(173, 95, 0);
-    font-size: 50px;
-    font-family: roboto;
-    text-align: center;
-  }
-  footer {
-    background-color: rgb(30, 30, 30);
-  }
-  p {
-    color: rgb(173, 95, 0);
-    font-family: roboto;
-    font-size: 20px;
   }
   footer p {
-    text-align: center;
+    font-size: 14px;
+    font-family: roboto;
+    font-weight: 0;
   }
   /*PRODUCCIONES*/
   #main_producciones {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/mezcla.jpg);
-    background-size: cover;
-    height: 800px;
-    justify-content: center;
-    align-items: center;
-  }
-  #main_producciones h3 {
-    color: rgb(173, 95, 0);
-    font-size: 20px;
-    font-family: roboto;
-    text-align: center;
-    padding: 20px 0px 0px 0px;
-  }
-  #main_producciones #titulo_canciones {
-    color: rgb(173, 95, 0);
-    font-size: 20px;
-    font-family: roboto;
-    text-align: center;
-    padding: 20px 5px 20px 5px;
+    height: 1100px;
   }
   #main_producciones #producciones_contenido {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(30, 30, 30);
-    height: 750px;
-    width: 1500px;
-    border-radius: 20px;
-  }
-  #main_producciones #videos_realizados {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  /*SERVICIOS*/
-  #servicios {
-    background-image: url(../img/micro.jpg);
-    background-size: cover;
-    position: relative;
-  }
-  .cards_contenedor {
-    display: grid;
-    grid-template-rows: 380px 380px;
-    grid-template-areas: "a1 a2 a3" "a4 a5 a6";
-    align-content: space-around;
-    justify-items: center;
-    align-items: center;
-  }
-  .cards_contenedor h4 {
-    color: rgb(173, 95, 0);
-    font-size: 15px;
-    font-family: roboto;
-    text-align: center;
-    padding: 0px 5px 20px 5px;
-  }
-  .cards_contenedor .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(30, 30, 30);
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-  }
-  .cards_contenedor .cards_img {
-    height: 50%;
-    width: 80%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .cards_contenedor .cards:hover {
-    border: 2px solid rgb(173, 95, 0);
-  }
-  /*SOBRE MI*/
-  #sobremi {
-    display: flex;
-    justify-content: center;
-    padding: 100px 100px 100px 100px;
-  }
-  #sobremi #sobremi_hijo {
-    padding: 20px 20px 20px 20px;
-  }
-  #sobremi #sobremi_hijouno {
-    width: 700px;
-  }
-  /*CONTACTO*/
-  #main_contacto {
-    background-image: url(../img/fondo.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #page_contacto {
-    background-color: #1E1E1E;
-    width: 1150px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-  }
-  #formulario {
-    display: flex;
-    flex-direction: column;
-    border-right: 2px solid #AD5E00;
-    padding-right: 50px;
-  }
-  #datosdecontacto {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    font-family: roboto;
-    background-color: #1E1E1E;
-    justify-content: center;
-    padding-left: 50px;
-  }
-  .checkboxes {
-    display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 150px;
-    grid-template-areas: "a1 a1" "a2 a3 " "a4 a5 " "a6 a7";
-  }
-  #checkbox_titulo {
-    grid-area: a1;
-  }
-  #checkbox_beats {
-    grid-area: a2;
-    margin-right: 10px;
-  }
-  #checkbox_grabacion {
-    grid-area: a3;
-    margin-right: 10px;
-  }
-  #checkbox_produccion {
-    grid-area: a4;
-    margin-right: 10px;
-  }
-  #checkbox_mezcla {
-    grid-area: a5;
-    margin-right: 10px;
-  }
-  #checkbox_videos {
-    grid-area: a6;
-    margin-right: 10px;
-  }
-  #checkbox_clases {
-    grid-area: a7;
-    margin-right: 10px;
-  }
-  label {
-    color: #AD5E00;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: roboto;
-    padding: 20px 0px 2px 0px;
-  }
-  legend {
-    color: #AD5E00;
-    font-size: 20px;
-    font-family: roboto;
-  }
-  input {
-    height: 40px;
-  }
-  #boton {
-    height: 36px;
-    width: 80px;
-    background-color: #AD5E00;
-    color: #1E1E1E;
-    font-weight: bold;
-    font-family: roboto;
-    border-color: #AD5E00;
-    border-radius: 5px;
-    margin-top: 10px;
-    align-self: flex-end;
-  }
-  #boton:hover {
-    background-color: #b67e39;
-    border-color: #b67e39;
-  }
-  .checkbox_text {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-  }
-  textarea {
-    width: 400px;
-    height: 100px;
-    max-width: 400px;
-    max-height: 100px;
-  }
-  a {
-    color: #AD5E00;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: roboto;
-  }
-  a:hover {
-    color: aliceblue;
-  }
-}
-/* L */
-@media only screen and (max-width: 992px) {
-  /*INICIO*/
-  h1 {
-    font-size: 20px;
-  }
-  .me-auto {
-    margin-left: 0%;
-  }
-  p {
-    font-size: 12px;
-  }
-  #logoprincipal {
-    width: 400px;
-    height: 300px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  /*PRODUCCIONES*/
-  #producciones_contenido {
-    display: flex;
-    flex-direction: column;
-    background-color: #1E1E1E;
-    height: 650px;
-    width: 950px;
-    padding: 20px 20px 20px 20px;
-    border-radius: 20px;
-  }
-  .videos_prod {
-    width: 325px;
-    height: 184px;
-    margin-top: 20px;
-  }
-  #main_producciones {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/mezcla.jpg);
-    height: 700px;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-  }
-  /*SERVICIOS*/
-  #servicios {
-    height: 1150px;
-  }
-  .cards_contenedor {
-    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
-    grid-template-rows: 380px 380px 380px;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #1E1E1E;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-  }
-}
-/* S */
-@media only screen and (max-width: 600px) {
-  /*INICIO*/
-  h1 {
-    font-size: 20px;
-  }
-  .me-auto {
-    margin-left: 0%;
-  }
-  p {
-    font-size: 14px;
-  }
-  #logoprincipal {
-    width: 400px;
-    height: 300px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  /*PRODUCCIONES*/
-  #producciones_contenido {
-    display: flex;
-    flex-direction: column;
-    background-color: #1E1E1E;
     height: 1050px;
     width: 350px;
     padding: 20px 20px 20px 20px;
-    border-radius: 20px;
   }
-  #videos_realizados {
+  #main_producciones #videos_realizados {
     flex-direction: column;
   }
-  .videos_prod {
+  #main_producciones .videos_prod {
     width: 310px;
     height: 176px;
     margin-top: 20px;
-  }
-  #main_producciones {
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/mezcla.jpg);
-    height: 1100px;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
   }
   /*SERVICIOS*/
   #servicios {
     height: 720px;
   }
-  .cards_contenedor {
+  #servicios .cards_contenedor {
     grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
     grid-template-rows: 230px 230px 230px;
   }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #1E1E1E;
+  #servicios .cards {
     width: 160px;
     height: 186px;
-    border-radius: 20px;
   }
   /*SOBRE MI*/
   #sobremi_main {
     height: 980px;
   }
   #sobremi {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -426,33 +329,160 @@
   #main_contacto {
     height: 950px;
   }
-  #page_contacto {
+  #main_contacto #page_contacto {
     width: 360px;
     height: 900px;
     flex-direction: column;
   }
-  #formulario {
+  #main_contacto #formulario {
     border-right: 0px;
     padding-right: 0px;
     border-bottom: 2px solid #AD5E00;
     padding-bottom: 25px;
     width: 328px;
   }
-  #datosdecontacto {
+  #main_contacto #datosdecontacto {
     padding-left: 0px;
     padding-top: 25px;
   }
-  label {
-    font-size: 18px;
-  }
-  textarea {
+  #main_contacto textarea {
     width: 328px;
+    height: 150px;
     max-width: 328px;
+    max-height: 150px;
   }
-  a {
-    font-size: 18px;
+}
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  /*INICIO*/
+  nav .nav-link {
+    font-size: 20px;
   }
-  #datosdecontacto_texto {
-    margin: 0px;
+  main {
+    height: 775px;
+    position: relative;
+  }
+  #logoprincipal {
+    width: 50%;
+    height: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  /*PRODUCCIONES*/
+  #main_producciones {
+    height: 700px;
+  }
+  #main_producciones #producciones_contenido {
+    height: 650px;
+    width: 950px;
+  }
+  #main_producciones #videos_realizados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #main_producciones .videos_prod {
+    width: 325px;
+    height: 184px;
+    margin-top: 20px;
+  }
+  /*SERVICIOS*/
+  #servicios {
+    height: 1150px;
+  }
+  #servicios .cards_contenedor {
+    grid-template-areas: "a1 a2" "a3 a4" "a5 a6";
+    grid-template-rows: 380px 380px 380px;
+  }
+  #servicios .cards {
+    width: 300px;
+    height: 300px;
+  }
+  /*SOBRE MI*/
+  #sobremi_main {
+    height: 800px;
+  }
+  #sobremi {
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 100px 100px 100px;
+  }
+  #sobremi p {
+    font-size: 20px;
+  }
+  #sobremi_hijo {
+    padding: 20px 20px 20px 20px;
+  }
+  #sobremi_img {
+    width: 380px;
+    height: auto;
+  }
+  #sobremi_hijouno {
+    width: 700px;
+  }
+  /*CONTACTO*/
+  #main_contacto {
+    height: 800px;
+  }
+  #main_contacto #page_contacto {
+    flex-direction: row;
+    width: 1100px;
+    height: 700px;
+  }
+  #main_contacto #formulario {
+    width: 400px;
+    border-right: 2px solid #ad5f00;
+    padding-right: 50px;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  #main_contacto textarea {
+    width: 348px;
+    height: 100px;
+    max-width: 348px;
+    max-height: 100px;
+  }
+  #main_contacto #datosdecontacto {
+    padding-left: 50px;
+  }
+  #main_contacto a {
+    font-size: 20px;
+  }
+  #main_contacto p {
+    font-size: 20px;
+  }
+}
+/* DESKTOP */
+@media only screen and (min-width: 992px) {
+  /*INICIO*/
+  nav h1 {
+    font-size: 40px;
+  }
+  .me-auto {
+    margin-left: 50%;
+  }
+  /*PRODUCCIONES*/
+  #main_producciones {
+    height: 800px;
+  }
+  #main_producciones #producciones_contenido {
+    height: 750px;
+    width: 1500px;
+  }
+  #main_producciones #videos_realizados {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  /*SERVICIOS*/
+  #servicios {
+    height: 800px;
+  }
+  #servicios .cards_contenedor {
+    grid-template-rows: 380px 380px;
+    grid-template-areas: "a1 a2 a3" "a4 a5 a6";
   }
 }/*# sourceMappingURL=style.css.map */

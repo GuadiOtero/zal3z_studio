@@ -1,64 +1,51 @@
 @import "variables/variables";
 
+@mixin titulos($tamanio, $tipografia, $weight){
+    font-size: $tamanio;
+    font-family: $tipografia;
+    font-weight: $weight;
+}
 
 *{
     margin:0;
     padding:0;  
 }
 
-@media only screen and ( min-width:1200px){
-
 /*INICIO*/
 
-h1{
-    color: $color_principal;
-    text-align: left;
-    font-family: lexend zetta;
-    font-size: 40px;
-}
-.navbar-toggler-icon{
-    background-image: url(../img/account-circle.png);
-}
+nav{
+    h1{
+        color: $color_principal;
+        text-align: left;
+        font-family: lexend zetta;
+    }
+    .navbar-toggler-icon{
+        background-image: url(../img/account-circle.png);
+    }
 
-.navbar-toggler{
-    color: $color_principal;
-}
+    .navbar-toggler{
+        color: $color_principal;
+    }
 
 
-.nav-link:hover{
-    color: azure;
-}
+    .nav-link:hover{
+        color: azure;
+    }
 
-.nav-link{
-    color: $color_principal;
-    font-size: 20px;
-    font-family: roboto;
-    font-weight: bold;
-    text-decoration: none;
-
-}
-
-.me-auto{
-    margin-left:50%;
+    .nav-link{
+        @include titulos(18px,roboto, bold);
+        color: $color_principal;
+        text-decoration: none;
+    }
 }
 
 body{
-    background-color: $color_secundario;
+    background-color: rgb(30, 30, 30);
     
 }
 
 main{
     background-color: $color_secundario;
-    height: 775px;
-    position: relative;
-}
-
-#logoprincipal{
-    width: 50%;
-    height: 30%;
-    object-fit: contain;
-
- 
 }
 
 #menuprincipal{
@@ -66,75 +53,47 @@ main{
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h2{
-    color: $color_principal;
-    font-size: 50px;
-    font-family: roboto;
-    text-align: center;
-}
+
 footer{
-    background-color: $color_secundario;   
-}
-
-p{
-    color: $color_principal;
-    font-family: roboto;
-    font-size: 20px;
-}
-
-
-footer p{
-    text-align: center;
+    background-color: $color_secundario; 
+    
+    p{
+        text-align: center;
+        color: $color_principal;
+    }  
 }
 
 /*PRODUCCIONES*/
+
+.titulo_canciones{
+    color: $color_principal;
+    @include titulos(20px,roboto, bold);
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+}
 
 #main_producciones{
     display: flex;
     flex-direction: column;
     background-image: url(../img/mezcla.jpg);
     background-size: cover;
-    height: 800px;
     justify-content: center;
     align-items: center;
 
-    h3{
-        color: $color_principal;
-        font-size: 20px;
-        font-family: roboto;
-        text-align: center;
-        padding: 20px 0px 0px 0px;
-    
-    
-    }
-
-    #titulo_canciones{
-        color: $color_principal;
-        font-size: 20px;
-        font-family: roboto;
-        text-align: center;
-        padding: 20px 5px 20px 5px;
-    }
-    
     #producciones_contenido{
         display: flex;
         flex-direction: column;
         background-color: $color_secundario;
-        height: 750px;
-        width: 1500px;
-        border-radius: 20px;
-        
+        border-radius: 20px;  
     }
-
-    #videos_realizados{
-        display: flex;
-        justify-content: space-evenly;
-        align-items:center;
+   
+    h3{
+        @extend .titulo_canciones;
+        padding: 20px 0px 0px 0px;
     }
 
 }
@@ -145,22 +104,18 @@ footer p{
     background-image: url(../img/micro.jpg);
     background-size: cover;
     position: relative;
-}
 
-.cards_contenedor{
-    display: grid;
-   grid-template-rows: 380px 380px;
-   grid-template-areas: "a1 a2 a3"
-                       "a4 a5 a6"                                   
-                       ;
-    align-content: space-around;
-    justify-items: center;
-    align-items: center;
 
+    .cards_contenedor{
+        display: grid;
+        align-content: space-around;
+        justify-items: center;
+        align-items: center;
+        }
+    
     h4{
+        @include titulos(15px,roboto, 0);
         color: $color_principal;
-        font-size: 15px;
-        font-family: roboto;
         text-align: center;
         padding: 0px 5px 20px 5px;
     }
@@ -171,8 +126,6 @@ footer p{
         align-items: center;
         justify-content: space-evenly;
         background-color: $color_secundario;
-        width: 300px;
-        height: 300px;
         border-radius: 20px;
     }
     
@@ -189,391 +142,465 @@ footer p{
 }
 
 /*SOBRE MI*/
+
 #sobremi{
     display: flex;
-    justify-content: center;
-    padding: 100px 100px 100px 100px;
-
-    #sobremi_hijo{
-        padding: 20px 20px 20px 20px; 
+    h3{
+        @extend .titulo_canciones;
+        text-align: left;
     }
-    
-    #sobremi_hijouno{
-        width: 700px;
-     
+    p{
+        @include titulos(15px,roboto, 0);
+        color: $color_principal;
     }
 }
 
 
 /*CONTACTO*/
 #main_contacto{
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/mezcla.jpg);
     background-size:cover;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#page_contacto{
-    background-color: #1E1E1E;
-    width: 1150px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-}
-
-#formulario{
-    display: flex;
-    flex-direction: column; 
-    border-right: 2px solid #AD5E00;
-     padding-right: 50px;
-}
-
-#datosdecontacto{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    font-family: roboto;
-    background-color: #1E1E1E;
-     justify-content: center;
-     padding-left: 50px;
-}
-
-.checkboxes{
-     display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: 150px;
-    grid-template-areas: "a1 a1"
-                        "a2 a3 "
-                        "a4 a5 "
-                        "a6 a7";
-
-}
-
-#checkbox_titulo{
-    grid-area: a1;
-    
-}
-#checkbox_beats{
-    grid-area: a2;
-    margin-right: 10px;
-}
-#checkbox_grabacion{
-    grid-area: a3;
-    margin-right: 10px;
-}
-#checkbox_produccion{
-    grid-area: a4;
-    margin-right: 10px;
-}
-#checkbox_mezcla{
-    grid-area: a5;
-    margin-right: 10px;
-}
-#checkbox_videos{
-    grid-area: a6;
-    margin-right: 10px;
-}
-#checkbox_clases{
-    grid-area: a7;
-    margin-right: 10px;
-}
-
-label{
-    color: #AD5E00;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: roboto;
-    padding: 20px 0px 2px 0px;
-}
-
-legend{
-    color:#AD5E00;
-    font-size: 20px;
-    font-family: roboto;
-}
-input{
-    height: 40px;
-}
-
-#boton{
-    height: 36px;
-    width: 80px;
-    background-color: #AD5E00;
-    color:#1E1E1E;
-    font-weight: bold;
-    font-family: roboto;
-    border-color: #AD5E00;
-    border-radius: 5px;
-    margin-top: 10px;
-    align-self: flex-end;
-}
-
-#boton:hover{
-    background-color:#b67e39;
-    border-color: #b67e39;
-}
-
-.checkbox_text{
-    display: flex;
-     align-items: center;
-    font-size: 15px;
-}
- 
-textarea{
-    width: 400px;
-    height: 100px;
-    max-width: 400px;
-    max-height: 100px;
-}
-
-a{
-    color: #AD5E00;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: roboto;
-}
-
-a:hover{
-     color: aliceblue;
-}
-
-}
+   
 
 
-/* L */
-@media only screen and ( max-width:992px){
-
-    /*INICIO*/
-    h1{
-        font-size: 20px;
+    #page_contacto{
+        background-color: $color_secundario;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
     }
 
-    .me-auto{
-        margin-left: 0%;
-    }      
-
-    p{
-        font-size: 12px;
+    #formulario{
+        display: flex;
+        flex-direction: column; 
     }
 
-    #logoprincipal{
-        width: 400px;
-        height: 300px;
-        object-fit: contain;
-    }
-
-    /*PRODUCCIONES*/
-
-    #producciones_contenido{
+    #datosdecontacto{
+        @include titulos(20px,roboto, 0);
         display: flex;
         flex-direction: column;
-        background-color: #1E1E1E;
-        height: 650px;
-        width: 950px;
-        padding: 20px 20px 20px 20px;
-        border-radius: 20px;
+        background-color: $color_secundario;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .checkboxes{
+        display: grid;
+        grid-template-rows: 50px;
+        grid-template-columns: 150px;
+        grid-template-areas: "a1 a1"
+                            "a2 a3 "
+                            "a4 a5 "
+                            "a6 a7";
+
+    }
+
+    #checkbox_titulo{
+        grid-area: a1;
         
     }
-
-
-    .videos_prod{
-        width: 325px;
-        height: 184px;
-        margin-top: 20px;
-
+    #checkbox_beats{
+        grid-area: a2;
+        margin-right: 10px;
+    }
+    #checkbox_grabacion{
+        grid-area: a3;
+        margin-right: 10px;
+    }
+    #checkbox_produccion{
+        grid-area: a4;
+        margin-right: 10px;
+    }
+    #checkbox_mezcla{
+        grid-area: a5;
+        margin-right: 10px;
+    }
+    #checkbox_videos{
+        grid-area: a6;
+        margin-right: 10px;
+    }
+    #checkbox_clases{
+        grid-area: a7;
+        margin-right: 10px;
     }
 
-    #main_producciones{
+    label{
+        @include titulos(18px,roboto, bold);
+        color: $color_principal;
+        padding: 20px 0px 2px 0px;
+    }
+
+    legend{
+        @include titulos(20px,roboto, 0);
+        color: $color_principal;
+
+    }
+    input{
+        height: 40px;
+    }
+
+    #boton{
+        @include titulos(15px,roboto, bold);
+        height: 36px;
+        width: 80px;
+        background-color: $color_principal;
+        color:$color_secundario;
+        border-color: $color_principal;
+        border-radius: 5px;
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    #boton:hover{
+        background-color:#b67e39;
+        border-color: #b67e39;
+    }
+
+    .checkbox_text{
+        @include titulos(15px,roboto, 0);
         display: flex;
-        flex-direction: column;
-        background-image: url(../img/mezcla.jpg);
-        height: 700px;
-        background-size: cover;
-        justify-content: center;
         align-items: center;
-            
-    }
-   /*SERVICIOS*/
-
-   #servicios{
-    height: 1150px;
-}
-    .cards_contenedor{
-    
-        grid-template-areas:"a1 a2"
-                           "a3 a4" 
-                           "a5 a6";
-        grid-template-rows: 380px 380px 380px;        
-            
+        color: $color_principal;
     }
 
-    .cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #1E1E1E;
-        width: 300px;
-        height: 300px;
-        border-radius: 20px;
+    a{
+        @include titulos(18px,roboto, bold);
+        color: $color_principal;
+
     }
 
+    a:hover{
+        color: aliceblue;
+    }
 
+    p{
+        @include titulos(18px,roboto, 0);
+        color: $color_principal;
+        margin: 0px;
+    }
 
 }
-
-
-/* S */
-@media only screen and ( max-width:600px){
+/* MOBILE */
+@media only screen and ( min-width:320px){
 
     /*INICIO*/
-    h1{
-        font-size: 20px;
+    nav{
+        h1{
+            font-size: 20px;
+        }
     }
-
     .me-auto{
         margin-left: 0%;
     }
 
-    p{
-        font-size: 14px;
+ 
+    main{
+        height: 800px;
     }
-
     #logoprincipal{
         width: 400px;
         height: 300px;
         object-fit: contain;
     }
 
+    footer{
+ 
+        p{
+            @include titulos(14px,roboto, 0);
+         }  
+    }
+
     /*PRODUCCIONES*/
 
-    #producciones_contenido{
-        display: flex;
-        flex-direction: column;
-        background-color: #1E1E1E;
-        height: 1050px;
-        width: 350px;
-        padding: 20px 20px 20px 20px;
-        border-radius: 20px;  
-    }
-
-    #videos_realizados{
-        flex-direction: column;
-    }
-
-    .videos_prod{
-        width: 310px;
-        height: 176px;
-        margin-top: 20px;
-    }
-
     #main_producciones{
-        display: flex;
-        flex-direction: column;
-        background-image: url(../img/mezcla.jpg);
         height: 1100px;
-        background-size: cover;
-        justify-content: center;
-        align-items: center;
-            
+           
+   
+        #producciones_contenido{
+            height: 1050px;
+            width: 350px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        #videos_realizados{
+            flex-direction: column;
+        }
+
+        .videos_prod{
+            width: 310px;
+            height: 176px;
+            margin-top: 20px;
+        }
+
     }
    /*SERVICIOS*/
 
    #servicios{
     height: 720px;
-}
-    .cards_contenedor{
-    
-        grid-template-areas:"a1 a2"
-                           "a3 a4" 
-                           "a5 a6";
-        grid-template-rows: 230px 230px 230px;        
-    }
 
-    .cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #1E1E1E;
-        width: 160px;
-        height: 186px;
-        border-radius: 20px;
+        .cards_contenedor{
+        
+            grid-template-areas:"a1 a2"
+                            "a3 a4" 
+                            "a5 a6";
+            grid-template-rows: 230px 230px 230px;        
+        }
+
+        .cards{
+            width: 160px;
+            height: 186px;
+        }
     }
 
     /*SOBRE MI*/
 
-    #sobremi_main{
-        height: 980px;
-    }
-    #sobremi{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 32px 16px 16px 16px;
-    }
+        #sobremi_main{
+            height: 980px;
+        }
+        #sobremi{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 32px 16px 16px 16px;
+        }
 
-    #sobremi_hijo{
-        padding: 0px 0px 0px 0px;
-        justify-content: center;   
-    }
+        #sobremi_hijo{
+            padding: 0px 0px 0px 0px;
+            justify-content: center;   
+        }
 
-    #sobremi_img{
-        width: 328px;
-        height: auto;
-    }
+        #sobremi_img{
+            width: 328px;
+            height: auto;
+        }
 
-    #sobremi_hijouno{
-        width: 328px;
-    }
+        #sobremi_hijouno{
+            width: 328px;
+        }
 
 
     /*CONTACTO*/
     #main_contacto{
         height: 950px;
     
+    
+        #page_contacto{
+            width: 360px;
+            height: 900px; 
+            flex-direction: column;
+        
+        }
+
+        #formulario{
+
+            border-right: 0px;
+            padding-right: 0px;
+            border-bottom: 2px solid #AD5E00;
+            padding-bottom: 25px;
+            width: 328px;  
+        }
+
+        #datosdecontacto{
+            padding-left: 0px;
+            padding-top: 25px;
+        }
+
+        textarea{
+            width: 328px;
+            height: 150px;
+            max-width: 328px;
+            max-height: 150px;
+        }
+    }
+    }
+/* TABLET */
+@media only screen and ( min-width:768px){
+
+    /*INICIO*/
+
+    
+    nav{
+        .nav-link{
+        font-size: 20px;
+        }
     }
 
-    #page_contacto{
-        width: 360px;
-        height: 900px; 
-        flex-direction: column;
+    main{
+        height: 775px;
+        position: relative;
+    }
+
+    #logoprincipal{
+        width: 50%;
+        height: 30%;
+        object-fit: contain;
+    }
+    footer{
+            
+        p{
+            font-size: 15px;
+          }  
+    }
+
+    /*PRODUCCIONES*/
+
+    #main_producciones{
+        height: 700px;
+
     
+        #producciones_contenido{
+            height: 650px;
+            width: 950px;
+        }
+
+        #videos_realizados{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items:center;
+        }
+    
+        .videos_prod{
+            width: 325px;
+            height: 184px;
+            margin-top: 20px;
+
+        }
+}
+
+   /*SERVICIOS*/
+
+   #servicios{
+        height: 1150px;
+
+        .cards_contenedor{
+        
+            grid-template-areas:"a1 a2"
+                            "a3 a4" 
+                            "a5 a6";
+            grid-template-rows: 380px 380px 380px;        
+                
+        }
+
+        .cards{
+            width: 300px;
+            height: 300px;
+        }
+   }
+
+   /*SOBRE MI*/
+
+        #sobremi_main{
+            height: 800px;
+        }
+        #sobremi{
+            flex-direction: row;
+            justify-content: center;
+            padding: 100px 100px 100px 100px;
+            
+            p{
+                font-size: 20px;
+            }
+        }
+            #sobremi_hijo{
+                padding: 20px 20px 20px 20px; 
+            }
+
+            #sobremi_img{
+                width: 380px;
+                height: auto;
+            }
+            #sobremi_hijouno{
+                width: 700px;
+            }
+        
+/*CONTACTO*/
+#main_contacto{
+    height: 800px;
+
+    #page_contacto{
+            flex-direction: row;
+            width: 1100px;
+            height: 700px;
+
     }
 
     #formulario{
-
-        border-right: 0px;
-        padding-right: 0px;
-        border-bottom: 2px solid #AD5E00;
-        padding-bottom: 25px;
-        width: 328px;  
-    }
-
-    #datosdecontacto{
-        padding-left: 0px;
-        padding-top: 25px;
-    }
-
-    label{
-        font-size: 18px;
+        width: 400px;
+        border-right: 2px solid $color_principal;
+        padding-right: 50px;
+        border-bottom: 0;
+        padding-bottom: 0;
     }
 
     textarea{
-        width: 328px;
-        max-width: 328px;
+        width: 348px;
+        height: 100px;
+        max-width: 348px;
+        max-height: 100px;
+    }
+
+    #datosdecontacto{
+
+        padding-left: 50px;
     }
 
     a{
-        font-size: 18px;
-    }
-    #datosdecontacto_texto{
-        margin:0px;
+        font-size: 20px;
     }
 
+    p{
+        font-size: 20px;
+    }
 }
+}
+/* DESKTOP */
+@media only screen and ( min-width:992px){
+    /*INICIO*/
+    nav{
+        h1{
+            font-size: 40px;
+        }
+    }
+
+    .me-auto{
+        margin-left: 50%;
+    }
+   
+        /*PRODUCCIONES*/
+    
+    #main_producciones{
+        height: 800px;
+    
+        #producciones_contenido{
+            height: 750px;
+            width: 1500px;
+           
+        }
+                  
+        #videos_realizados{
+             justify-content: space-evenly;
+            align-items:center;
+        }
+    
+    }
+    
+    /*SERVICIOS*/
+    
+    #servicios{
+        height: 800px;
+    
+        .cards_contenedor{
+             grid-template-rows: 380px 380px;
+            grid-template-areas: "a1 a2 a3"
+                                "a4 a5 a6"                                   
+                            ;
+            } 
+    }
+}
+
 
