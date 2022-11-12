@@ -108,7 +108,7 @@ footer p {
   background-color: rgb(30, 30, 30);
   border-radius: 20px;
 }
-#servicios .cards_img {
+#servicios .cards__img {
   height: 50%;
   width: 80%;
   -o-object-fit: contain;
@@ -133,25 +133,25 @@ footer p {
 }
 
 /*CONTACTO*/
-#main_contacto {
+#contacto__main {
   background-image: url(../img/mezcla.png);
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#main_contacto #page_contacto {
+#contacto__main #contacto__card {
   background-color: rgb(30, 30, 30);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
-#main_contacto #formulario {
+#contacto__main #contacto__form {
   display: flex;
   flex-direction: column;
 }
-#main_contacto #datosdecontacto {
+#contacto__main #datosdecontacto {
   font-size: 20px;
   font-family: roboto;
   font-weight: 0;
@@ -161,56 +161,56 @@ footer p {
   justify-content: center;
   padding-left: 50px;
 }
-#main_contacto .checkboxes {
+#contacto__main .checkbox {
   display: grid;
   grid-template-rows: 50px;
   grid-template-columns: 150px;
   grid-template-areas: "a1 a1" "a2 a3 " "a4 a5 " "a6 a7";
 }
-#main_contacto #checkbox_titulo {
+#contacto__main #checkbox__titulo {
   grid-area: a1;
 }
-#main_contacto #checkbox_beats {
+#contacto__main #checkbox__beats {
   grid-area: a2;
   margin-right: 10px;
 }
-#main_contacto #checkbox_grabacion {
+#contacto__main #checkbox__grabacion {
   grid-area: a3;
   margin-right: 10px;
 }
-#main_contacto #checkbox_produccion {
+#contacto__main #checkbox__produccion {
   grid-area: a4;
   margin-right: 10px;
 }
-#main_contacto #checkbox_mezcla {
+#contacto__main #checkbox__mezcla {
   grid-area: a5;
   margin-right: 10px;
 }
-#main_contacto #checkbox_videos {
+#contacto__main #checkbox__videos {
   grid-area: a6;
   margin-right: 10px;
 }
-#main_contacto #checkbox_clases {
+#contacto__main #checkbox__clases {
   grid-area: a7;
   margin-right: 10px;
 }
-#main_contacto label {
+#contacto__main label {
   font-size: 18px;
   font-family: roboto;
   font-weight: bold;
   color: #ad5f00;
   padding: 20px 0px 2px 0px;
 }
-#main_contacto legend {
+#contacto__main legend {
   font-size: 20px;
   font-family: roboto;
   font-weight: 0;
   color: #ad5f00;
 }
-#main_contacto input {
+#contacto__main input {
   height: 40px;
 }
-#main_contacto #boton {
+#contacto__main #boton {
   font-size: 15px;
   font-family: roboto;
   font-weight: bold;
@@ -223,11 +223,11 @@ footer p {
   margin-top: 10px;
   align-self: flex-end;
 }
-#main_contacto #boton:hover {
+#contacto__main #boton:hover {
   background-color: #b67e39;
   border-color: #b67e39;
 }
-#main_contacto .checkbox_text {
+#contacto__main .checkbox_text {
   font-size: 15px;
   font-family: roboto;
   font-weight: 0;
@@ -235,16 +235,16 @@ footer p {
   align-items: center;
   color: #ad5f00;
 }
-#main_contacto a {
+#contacto__main a {
   font-size: 18px;
   font-family: roboto;
   font-weight: bold;
   color: #ad5f00;
 }
-#main_contacto a:hover {
+#contacto__main a:hover {
   color: aliceblue;
 }
-#main_contacto p {
+#contacto__main p {
   font-size: 18px;
   font-family: roboto;
   font-weight: 0;
@@ -305,7 +305,7 @@ footer p {
     height: 186px;
   }
   /*SOBRE MI*/
-  #sobremi_main {
+  #sobremi__main {
     height: 980px;
   }
   #sobremi {
@@ -314,38 +314,38 @@ footer p {
     align-items: center;
     padding: 32px 16px 16px 16px;
   }
-  #sobremi_hijo {
+  #sobremi__hijo {
     padding: 0px 0px 0px 0px;
     justify-content: center;
   }
-  #sobremi_img {
+  #sobremi__img {
     width: 328px;
     height: auto;
   }
-  #sobremi_hijouno {
+  #sobremi__hijouno {
     width: 328px;
   }
   /*CONTACTO*/
-  #main_contacto {
+  #contacto__main {
     height: 950px;
   }
-  #main_contacto #page_contacto {
+  #contacto__main #contacto__card {
     width: 360px;
     height: 900px;
     flex-direction: column;
   }
-  #main_contacto #formulario {
+  #contacto__main #contacto__form {
     border-right: 0px;
     padding-right: 0px;
     border-bottom: 2px solid #AD5E00;
     padding-bottom: 25px;
     width: 328px;
   }
-  #main_contacto #datosdecontacto {
+  #contacto__main #datosdecontacto {
     padding-left: 0px;
     padding-top: 25px;
   }
-  #main_contacto textarea {
+  #contacto__main textarea {
     width: 328px;
     height: 150px;
     max-width: 328px;
@@ -403,8 +403,8 @@ footer p {
     height: 300px;
   }
   /*SOBRE MI*/
-  #sobremi_main {
-    height: 800px;
+  #sobremi__main {
+    height: 700px;
   }
   #sobremi {
     flex-direction: row;
@@ -414,45 +414,45 @@ footer p {
   #sobremi p {
     font-size: 20px;
   }
-  #sobremi_hijo {
+  #sobremi__hijo {
     padding: 20px 20px 20px 20px;
   }
-  #sobremi_img {
+  #sobremi__img {
     width: 380px;
     height: auto;
   }
-  #sobremi_hijouno {
+  #sobremi__hijouno {
     width: 700px;
   }
   /*CONTACTO*/
-  #main_contacto {
+  #contacto__main {
     height: 800px;
   }
-  #main_contacto #page_contacto {
+  #contacto__main #contacto__card {
     flex-direction: row;
     width: 1100px;
     height: 700px;
   }
-  #main_contacto #formulario {
+  #contacto__main #contacto__form {
     width: 400px;
     border-right: 2px solid #ad5f00;
     padding-right: 50px;
     border-bottom: 0;
     padding-bottom: 0;
   }
-  #main_contacto textarea {
+  #contacto__main textarea {
     width: 348px;
     height: 100px;
     max-width: 348px;
     max-height: 100px;
   }
-  #main_contacto #datosdecontacto {
+  #contacto__main #datosdecontacto {
     padding-left: 50px;
   }
-  #main_contacto a {
+  #contacto__main a {
     font-size: 20px;
   }
-  #main_contacto p {
+  #contacto__main p {
     font-size: 20px;
   }
 }

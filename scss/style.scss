@@ -129,7 +129,7 @@ footer{
         border-radius: 20px;
     }
     
-    .cards_img{
+    .cards__img{
         height: 50%;
         width: 80%;
         object-fit: contain;
@@ -157,7 +157,7 @@ footer{
 
 
 /*CONTACTO*/
-#main_contacto{
+#contacto__main{
     background-image: url(../img/mezcla.png);
     background-size:cover;
     display: flex;
@@ -166,7 +166,7 @@ footer{
    
 
 
-    #page_contacto{
+    #contacto__card{
         background-color: $color_secundario;
         display: flex;
         justify-content: center;
@@ -174,7 +174,7 @@ footer{
         border-radius: 20px;
     }
 
-    #formulario{
+    #contacto__form{
         display: flex;
         flex-direction: column; 
     }
@@ -188,7 +188,7 @@ footer{
         padding-left: 50px;
     }
 
-    .checkboxes{
+    .checkbox{
         display: grid;
         grid-template-rows: 50px;
         grid-template-columns: 150px;
@@ -199,31 +199,31 @@ footer{
 
     }
 
-    #checkbox_titulo{
+    #checkbox__titulo{
         grid-area: a1;
         
     }
-    #checkbox_beats{
+    #checkbox__beats{
         grid-area: a2;
         margin-right: 10px;
     }
-    #checkbox_grabacion{
+    #checkbox__grabacion{
         grid-area: a3;
         margin-right: 10px;
     }
-    #checkbox_produccion{
+    #checkbox__produccion{
         grid-area: a4;
         margin-right: 10px;
     }
-    #checkbox_mezcla{
+    #checkbox__mezcla{
         grid-area: a5;
         margin-right: 10px;
     }
-    #checkbox_videos{
+    #checkbox__videos{
         grid-area: a6;
         margin-right: 10px;
     }
-    #checkbox_clases{
+    #checkbox__clases{
         grid-area: a7;
         margin-right: 10px;
     }
@@ -358,7 +358,7 @@ footer{
 
     /*SOBRE MI*/
 
-        #sobremi_main{
+        #sobremi__main{
             height: 980px;
         }
         #sobremi{
@@ -368,34 +368,34 @@ footer{
             padding: 32px 16px 16px 16px;
         }
 
-        #sobremi_hijo{
+        #sobremi__hijo{
             padding: 0px 0px 0px 0px;
             justify-content: center;   
         }
 
-        #sobremi_img{
+        #sobremi__img{
             width: 328px;
             height: auto;
         }
 
-        #sobremi_hijouno{
+        #sobremi__hijouno{
             width: 328px;
         }
 
 
     /*CONTACTO*/
-    #main_contacto{
+    #contacto__main{
         height: 950px;
     
     
-        #page_contacto{
+        #contacto__card{
             width: 360px;
             height: 900px; 
             flex-direction: column;
         
         }
 
-        #formulario{
+        #contacto__form{
 
             border-right: 0px;
             padding-right: 0px;
@@ -494,8 +494,8 @@ footer{
 
    /*SOBRE MI*/
 
-        #sobremi_main{
-            height: 800px;
+        #sobremi__main{
+            height: 700px;
         }
         #sobremi{
             flex-direction: row;
@@ -506,30 +506,30 @@ footer{
                 font-size: 20px;
             }
         }
-            #sobremi_hijo{
+            #sobremi__hijo{
                 padding: 20px 20px 20px 20px; 
             }
 
-            #sobremi_img{
+            #sobremi__img{
                 width: 380px;
                 height: auto;
             }
-            #sobremi_hijouno{
+            #sobremi__hijouno{
                 width: 700px;
             }
         
 /*CONTACTO*/
-#main_contacto{
+#contacto__main{
     height: 800px;
 
-    #page_contacto{
+    #contacto__card{
             flex-direction: row;
             width: 1100px;
             height: 700px;
 
     }
 
-    #formulario{
+    #contacto__form{
         width: 400px;
         border-right: 2px solid $color_principal;
         padding-right: 50px;
