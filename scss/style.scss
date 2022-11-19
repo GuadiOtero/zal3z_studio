@@ -63,6 +63,7 @@ footer{
     
     p{
         text-align: center;
+        margin-top: 5px;
         color: $color_principal;
     }  
 }
@@ -449,7 +450,7 @@ footer{
     /*PRODUCCIONES*/
 
     #main_producciones{
-        height: 700px;
+        height: 800px;
 
     
         #producciones_contenido{
@@ -495,7 +496,7 @@ footer{
    /*SOBRE MI*/
 
         #sobremi__main{
-            height: 700px;
+            height: 800px;
         }
         #sobremi{
             flex-direction: row;
