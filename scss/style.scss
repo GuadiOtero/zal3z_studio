@@ -13,12 +13,13 @@
 
 /*INICIO*/
 
-nav{
-    h1{
+
+.titulo_logo{
         color: $color_principal;
         text-align: left;
         font-family: lexend zetta;
     }
+    nav{
     .navbar-toggler-icon{
         background-image: url(../img/account-circle.png);
     }
@@ -144,15 +145,26 @@ footer{
 
 /*SOBRE MI*/
 
+#sobremi__main{
+    display: flex;
+    justify-content: center;
+}
+
 #sobremi{
     display: flex;
     h3{
-        @extend .titulo_canciones;
-        text-align: left;
+        @extend .titulo_logo;
+  
     }
     p{
         @include titulos(15px,roboto, 0);
         color: $color_principal;
+    }
+
+    li{
+        @include titulos(15px,roboto, 0);
+        color: $color_principal;
+        list-style: none;
     }
 }
 
@@ -164,11 +176,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    
    
 
 
     #contacto__card{
-        background-color: $color_secundario;
+        background-color: $color_secundario; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -289,15 +302,16 @@ footer{
 @media only screen and ( min-width:320px){
 
     /*INICIO*/
-    nav{
-        h1{
+    
+    .titulo_logo{
             font-size: 20px;
-        }
     }
+        
+    nav{
     .me-auto{
         margin-left: 0%;
     }
-
+    }
  
     main{
         height: 800px;
@@ -360,7 +374,7 @@ footer{
     /*SOBRE MI*/
 
         #sobremi__main{
-            height: 980px;
+            height: 1280px;
         }
         #sobremi{
             flex-direction: column;
@@ -422,7 +436,9 @@ footer{
 @media only screen and ( min-width:768px){
 
     /*INICIO*/
-
+    .titulo_logo{
+        font-size: 30px;
+}
     
     nav{
         .nav-link{
@@ -496,15 +512,26 @@ footer{
    /*SOBRE MI*/
 
         #sobremi__main{
-            height: 800px;
+            height: 1300px;
         }
         #sobremi{
-            flex-direction: row;
+            width: 90%;
+            height: 90%;
+            flex-direction: column;
             justify-content: center;
-            padding: 100px 100px 100px 100px;
+
+
+            h3{
+                font-size: 20px;
+            }
             
             p{
-                font-size: 20px;
+             font-size: 18px;
+            }
+
+
+            li{
+             font-size: 18px;
             }
         }
             #sobremi__hijo{
@@ -512,8 +539,8 @@ footer{
             }
 
             #sobremi__img{
-                width: 380px;
-                height: auto;
+                width: auto;
+                height: 480px;
             }
             #sobremi__hijouno{
                 width: 700px;
@@ -525,7 +552,7 @@ footer{
 
     #contacto__card{
             flex-direction: row;
-            width: 1100px;
+            width: 1000px;
             height: 700px;
 
     }
@@ -562,15 +589,13 @@ footer{
 /* DESKTOP */
 @media only screen and ( min-width:992px){
     /*INICIO*/
-    nav{
-        h1{
+   
+        .titulo_logo{
             font-size: 40px;
         }
-    }
 
-    .me-auto{
-        margin-left: 50%;
-    }
+
+   
    
         /*PRODUCCIONES*/
     
@@ -579,7 +604,7 @@ footer{
     
         #producciones_contenido{
             height: 750px;
-            width: 1500px;
+            width: 90%;
            
         }
                   
@@ -602,6 +627,39 @@ footer{
                             ;
             } 
     }
+
+    /*SOBRE MI*/
+    #sobremi__main{
+        height: 900px;
+    }
+ 
+    #sobremi{
+        width: 90%;
+        height: 90%;
+        flex-direction: row;
+        justify-content: center;
+
+        
+        p{
+            font-size: 20px;
+            width: 700px;
+
+        }
+
+        h3{
+            font-size: 30px;
+        }
+    }
+
+        #sobremi__img{
+            width: auto;
+            height: 680px;
+        }
+        #sobremi__hijouno{
+            width: 700px;
+            height: 680px;
+        }
+    
 }
 
 
