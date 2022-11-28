@@ -78,6 +78,7 @@ footer p {
   flex-direction: column;
   background-color: rgb(30, 30, 30);
   border-radius: 20px;
+  box-shadow: 0px 5px 10px #000;
 }
 #main_producciones h3 {
   padding: 20px 0px 0px 0px;
@@ -184,6 +185,7 @@ footer p {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  box-shadow: 0px 5px 10px #000;
 }
 #contacto__main #contacto__form {
   display: flex;
