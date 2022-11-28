@@ -5,7 +5,7 @@
 
 /*INICIO*/
 .titulo_logo, #sobremi h3 {
-  color: #ad5f00;
+  color: #04ADBF;
   text-align: left;
   font-family: lexend zetta;
 }
@@ -14,7 +14,7 @@ nav .navbar-toggler-icon {
   background-image: url(../img/account-circle.png);
 }
 nav .navbar-toggler {
-  color: #ad5f00;
+  color: #04ADBF;
 }
 nav .nav-link:hover {
   color: azure;
@@ -23,7 +23,7 @@ nav .nav-link {
   font-size: 18px;
   font-family: roboto;
   font-weight: bold;
-  color: #ad5f00;
+  color: #04ADBF;
   text-decoration: none;
 }
 
@@ -33,6 +33,7 @@ body {
 
 main {
   background-color: rgb(30, 30, 30);
+  position: relative;
 }
 
 #menuprincipal {
@@ -51,12 +52,12 @@ footer {
 footer p {
   text-align: center;
   margin-top: 5px;
-  color: #ad5f00;
+  color: #04ADBF;
 }
 
 /*PRODUCCIONES*/
 .titulo_canciones, #main_producciones h3 {
-  color: #ad5f00;
+  color: #04ADBF;
   font-size: 20px;
   font-family: roboto;
   font-weight: bold;
@@ -67,7 +68,7 @@ footer p {
 #main_producciones {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/mezcla.png);
+  background-image: url(../img/fondomicro.png);
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -84,7 +85,7 @@ footer p {
 
 /*SERVICIOS*/
 #servicios {
-  background-image: url(../img/micro.png);
+  background-image: url(../img/mezcla.png);
   background-size: cover;
   position: relative;
 }
@@ -98,26 +99,52 @@ footer p {
   font-size: 15px;
   font-family: roboto;
   font-weight: 0;
-  color: #ad5f00;
+  color: #04ADBF;
   text-align: center;
   padding: 0px 5px 20px 5px;
 }
 #servicios .cards {
+  position: relative;
+}
+#servicios .cards div {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#servicios .cards .front {
   background-color: rgb(30, 30, 30);
   border-radius: 20px;
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0px 5px 10px #000;
 }
-#servicios .cards__img {
-  height: 50%;
-  width: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
+#servicios .cards .back {
+  background-color: #04ADBF;
+  border-radius: 20px;
+  transform: perspective(600px) rotateY(180deg);
+  box-shadow: 0px 5px 10px #000;
 }
-#servicios .cards:hover {
-  border: 2px solid #ad5f00;
+#servicios .cards .back p {
+  color: rgb(30, 30, 30);
+  margin: 24px 24px 24px 24px;
+  text-align: center;
+}
+#servicios .cards .back a {
+  color: rgb(30, 30, 30);
+  font-weight: bold;
+}
+#servicios .cards:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+#servicios .cards:hover .back {
+  transform: perspective(600px) rotateY(360deg);
 }
 
 /*SOBRE MI*/
@@ -133,19 +160,19 @@ footer p {
   font-size: 15px;
   font-family: roboto;
   font-weight: 0;
-  color: #ad5f00;
+  color: #04ADBF;
 }
 #sobremi li {
   font-size: 15px;
   font-family: roboto;
   font-weight: 0;
-  color: #ad5f00;
+  color: #04ADBF;
   list-style: none;
 }
 
 /*CONTACTO*/
 #contacto__main {
-  background-image: url(../img/mezcla.png);
+  background-image: url(../img/fondodos.png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -209,14 +236,14 @@ footer p {
   font-size: 18px;
   font-family: roboto;
   font-weight: bold;
-  color: #ad5f00;
+  color: #04ADBF;
   padding: 20px 0px 2px 0px;
 }
 #contacto__main legend {
   font-size: 20px;
   font-family: roboto;
   font-weight: 0;
-  color: #ad5f00;
+  color: #04ADBF;
 }
 #contacto__main input {
   height: 40px;
@@ -227,16 +254,16 @@ footer p {
   font-weight: bold;
   height: 36px;
   width: 80px;
-  background-color: #ad5f00;
+  background-color: #04ADBF;
   color: rgb(30, 30, 30);
-  border-color: #ad5f00;
+  border-color: #04ADBF;
   border-radius: 5px;
   margin-top: 10px;
   align-self: flex-end;
 }
 #contacto__main #boton:hover {
-  background-color: #b67e39;
-  border-color: #b67e39;
+  background-color: #08e6ff;
+  border-color: #08e6ff;
 }
 #contacto__main .checkbox_text {
   font-size: 15px;
@@ -244,13 +271,13 @@ footer p {
   font-weight: 0;
   display: flex;
   align-items: center;
-  color: #ad5f00;
+  color: #04ADBF;
 }
 #contacto__main a {
   font-size: 18px;
   font-family: roboto;
   font-weight: bold;
-  color: #ad5f00;
+  color: #04ADBF;
 }
 #contacto__main a:hover {
   color: aliceblue;
@@ -259,7 +286,7 @@ footer p {
   font-size: 18px;
   font-family: roboto;
   font-weight: 0;
-  color: #ad5f00;
+  color: #04ADBF;
   margin: 0px;
 }
 
@@ -312,8 +339,14 @@ footer p {
     grid-template-rows: 230px 230px 230px;
   }
   #servicios .cards {
-    width: 160px;
-    height: 186px;
+    width: 210px;
+    height: 200px;
+  }
+  #servicios .cards .back p {
+    font-size: 12px;
+  }
+  #servicios .cards .back a {
+    font-size: 12px;
   }
   /*SOBRE MI*/
   #sobremi__main {
@@ -348,7 +381,7 @@ footer p {
   #contacto__main #contacto__form {
     border-right: 0px;
     padding-right: 0px;
-    border-bottom: 2px solid #AD5E00;
+    border-bottom: 2px solid #04ADBF;
     padding-bottom: 25px;
     width: 328px;
   }
@@ -373,8 +406,7 @@ footer p {
     font-size: 20px;
   }
   main {
-    height: 775px;
-    position: relative;
+    height: 800px;
   }
   #logoprincipal {
     width: 50%;
@@ -416,6 +448,17 @@ footer p {
     width: 300px;
     height: 300px;
   }
+  #servicios .cards .back p {
+    font-size: 16px;
+  }
+  #servicios .cards .back a {
+    font-size: 16px;
+  }
+  #servicios h4 {
+    font-size: 20px;
+    font-family: roboto;
+    font-weight: bold;
+  }
   /*SOBRE MI*/
   #sobremi__main {
     height: 1300px;
@@ -456,7 +499,7 @@ footer p {
   }
   #contacto__main #contacto__form {
     width: 400px;
-    border-right: 2px solid #ad5f00;
+    border-right: 2px solid #04ADBF;
     padding-right: 50px;
     border-bottom: 0;
     padding-bottom: 0;
@@ -494,6 +537,10 @@ footer p {
   #main_producciones #videos_realizados {
     justify-content: space-evenly;
     align-items: center;
+  }
+  #main_producciones .videos_prod {
+    width: 399px;
+    height: 225px;
   }
   /*SERVICIOS*/
   #servicios {
